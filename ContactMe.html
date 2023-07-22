@@ -1,0 +1,110 @@
+<htlml>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskan Ghetiya</title> 
+    <link rel="stylesheet"href="ContactMe.css" href="Index.html" href="style.css"   type="text/css"> 
+    
+    
+</head>
+    <body>
+        <div class="background">
+            <div class="topbar"> 
+            <nav>
+                
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="file:///Users/muskanghetiya/Downloads/MuskanGhetiyaResume%202.html">Resume</a></li>
+                    <li><a href="./ContactMe.html">Contact Me</a></li>
+                    <li><a href="#">Recent Project</a></li>
+                    
+                </ul>
+                
+            </nav>
+               </div>
+            
+            <div class="logo">Muskan G.</div>
+            <!--
+            <img src="Mail%20Icon.png" class= "Icons">
+            <img src="Linkedin%20Icon.png" class="Icons">
+            -->
+            <div class="text-box">
+                <h1>Contact Me</h1>
+                
+                <div clas="contactB">
+                <p><br>
+                    Email: muskanghetiya@uconn.edu <br>
+                
+                    LinkedIn:
+                    <a href="https://www.linkedin.com/in/muskan-ghetiya/" >https://www.linkedin.com/in/muskan-ghetiya/</a>  <br>
+                    
+                    GitHub:
+                    <a href="https://github.com/muskang25" >https://github.com/muskang25</a>
+                     <br> <br> <br> <br> <br> <br> <br> <br><br>
+                </p>
+                </div>
+               <a  href="file:///Users/muskanghetiya/Downloads/MuskanGhetiyaResume%202.html" class="Resume"autofocus><button> Resume</button></a>
+                
+
+            </div>
+            
+            <!--
+            <img src="roseshot.jpeg" class= "feature-img">
+            -->
+                
+            <!-- BEGINING OF ANSHIE BANSHIE BWHAHAHAHh--> 
+             <div class="form2">
+     <form name="submit-to-google-sheet" >
+        <label> <strong> Send a Message </strong> </label>
+            <br>
+            <br>
+            <p class="psub">If you have any questions or need to get in contact with me, feel free to send me a message.</p>
+            <br>
+            <label> Name </label>
+            <br>
+            <input class = "one" type ="text" name="Name" placeholder="Your Name" required>
+            <br>
+            <br>
+            <label> Email </label>
+            <br>
+            <input class="one" type ="email" name="Email" placeholder="username@domain.com" required>
+            <br>
+            <br>
+        <label> Message </label>
+            <br>
+            <textarea class="two" name="Message" placeholder="Your Message" required> </textarea>
+            <br>
+            <br>
+        <button class="fix" type="submit"> Submit </button>
+       
+    </form>
+   
+   
+    <span id="msg"></span>
+   
+    </div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbze0CWVMNTmfahzJfXk86BcZseBkP03VI8JDhqvz0kM2Mo0A9xg36onIlHmRvRGPGhO/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent!"
+         setTimeout(function(){
+            msg.innerHTML = ""
+        },3000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+             
+          <!-- END OF ANSHIE BANSHIE BWHAHAHAHh-->
+            </div>
+            
+              
+    </body>
+</htlml>

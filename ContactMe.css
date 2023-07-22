@@ -1,0 +1,330 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif, sans-serif;
+    box-sizing: border-box;
+}
+
+.background{ 
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background:#f9f1fe;
+    color: #5A5A5A;
+    padding: 10px 8%;
+    position: relative; 
+    background: 
+         
+        /*linear-gradient(rgba(50, 53, 55,.5),rgba(50, 53, 55,.5)), */
+        linear-gradient(rgba(9, 7, 7,.5),rgba(7, 11, 14,.5)),url(laptop.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+nav{
+    position: fixed; 
+    top: 0;
+    left: 285;
+    width: 100%;
+    padding: 15px 8%;
+    display: flex; 
+    align-items: center;
+    z-index: 10;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: left;   
+}
+
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 25px 60px;     
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #d191d1;
+    position:absolute;
+    left: 0;
+    bottom: 0px;   
+    transition: transform 0.1s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom left right;   
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #bebebe;
+}
+
+nav a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom center;   
+}
+
+
+
+nav a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;  
+}
+
+
+
+.logo{
+    
+    text-shadow: #fff;
+    height: 110px;
+    cursor: pointer;
+    position: fixed;
+    font-size: 40px;
+    font-family:serif;
+    top: 0;
+    left: -30;
+    width: 32%;
+    padding: 15px 8%;
+    display: flex; 
+    align-items: center;
+    z-index: 10;
+    color:#fff
+}
+
+/*
+.topbar{
+   position: absolute;
+    background-color:#f9f1fa;
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: .5px .5px 10px #d0c0da;
+    
+}
+*/
+
+
+.text-box{
+    margin-top: 18%;
+    max-width: 600px;
+    font-size: 20px;
+    color: white;
+    border-right: 2px solid #fff;
+    padding-right: 100px;
+    
+    
+}
+
+
+.text-box h1{
+    font-family:serif;
+    font-size: 70px;
+    line-height: 90px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d191d1;
+    color: #fff;
+}
+
+
+.text-box p{
+    line-height: 28px;
+    font-size: 20px;
+    color: #fff;
+
+    
+}
+
+.text-box button{
+    padding: 20px 40px;
+    background: #fff;
+    border: 4px solid #efebf0;
+    outline: 0; 
+    margin-top: 10px;
+    margin right: 10px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    font-size: 17px; 
+    color: #5a5a5a;
+}
+
+/* Style all links to be white and remove the underline */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Style links when hovered */
+a:hover {
+  color: #bebebe; /* Change the color on hover, e.g., light gray */
+  
+}
+
+.text-box button:hover{
+    border: 4px solid #fff;
+    text-decoration-color: #fff;
+    background: #a9a9a9;
+    font-size: 17px;
+    color: #fff;
+}
+
+/*
+ .feature-img{
+    width: 275px;
+    height: 300px;
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    z-index: 2;
+    border-style:solid;
+    border-color: aliceblue;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 10px 10px 20px 10px;
+      
+}
+*/
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28.5%;
+    height: 100%;
+    background: #fff; 
+    z-index: 1;    
+}
+
+
+.sidebar a {
+    position: fixed;
+    color: #5a5a5a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.sidebar a img{
+    height: 30px;
+}
+
+/*
+.Icons{
+    outline-width:thick;
+    width: 50px;
+    position:inherit;
+    top: 465;
+    filter:opacity(.5) drop-shadow(0 0 0 #5a5a5a) brightness(200%)
+    
+    
+}
+*/
+
+/* ANSHIE PROJJY*/
+form{
+    position: absolute;
+    /*left: 950;*/
+    left:900;
+    top: 200;
+    color: white;
+    font-size: 20px;
+    /*border-left: 4px dashed #d191d1;*/
+    height: 470px;
+    padding-right: 40px;
+}
+
+form label:nth-child(1){
+    font-size: 25px;
+}
+
+.psub{
+    max-width: 350px;
+    color: #fff;
+}
+
+.one {
+    width:350px;
+    height:30px;
+    
+    
+}
+
+.two {
+    width: 350px;
+    height: 80px;
+    background-color: white;
+    
+
+}
+
+#msg{
+    position:absolute;
+    left: 480px;
+    top: 620px;
+    color: white;
+}
+
+
+.fix{
+    border: 4px solid #efebf0;
+    margin-top: 30px;
+    padding: 15px 30px;
+    margin-right: 10px;
+    color: #000;
+    background-color:#fff;
+    font-weight: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+.fix:hover{
+    border: 4px solid #fff;
+    background-color:  #a9a9a9;
+    color: #000000;
+}
+
+
+/* ANSHIE PROJJY*/
+
+
+
+
+
+
+.topbar{
+    position: absolute;
+    background-color: #5a5a5a;
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    margin-top:-10;
+    top: 50;
+    left: 0;
+    box-shadow: .5px .5px 10px #d0c0da;   
+    
+}
