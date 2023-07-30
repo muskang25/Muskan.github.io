@@ -282,13 +282,13 @@ form label:nth-child(1){
 
 #msg{
     position:absolute;
-    left: 480px;
-    top: 620px;
+    left:1150px;
+    top: 610px;
     color: white;
 }
 
 
-.fix{
+.SubmitButton{
     border: 4px solid #efebf0;
     margin-top: 30px;
     padding: 15px 30px;
@@ -302,10 +302,10 @@ form label:nth-child(1){
 
 }
 
-.fix:hover{
+.SubmitButton:hover{
     border: 4px solid #fff;
     background-color:  #a9a9a9;
-    color: #000000;
+    color: #fff;
 }
 
 
