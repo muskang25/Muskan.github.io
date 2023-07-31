@@ -76,7 +76,7 @@ nav ul li a::after{
     position:absolute;
     left: 0;
     bottom: 0px;   
-    transition: transform 0.1s ease-out;
+    transition: transform 0.3s ease-out;
     transform: scaleX(0);
     transform-origin: bottom left right;    
 }
